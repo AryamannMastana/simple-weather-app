@@ -1,6 +1,6 @@
 //This JS file is for interacting witht the AccuWeather API
 
-const key = 'REkA7fEKVyjuo4pnshAEFD0jMXPTPqVb';
+const key = 'RlmdUsWVlO43WKkgrskKmzfV8Nun1utZ';
 
 // Get weather info
 const getWeather = async (id) => {
