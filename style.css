@@ -1,11 +1,16 @@
 body {
-    background-color: #eeedec;
+    background-color: #eee;
     letter-spacing: 0.2em;
     font-size: 0.8em;
 }
 
 .container {
-    max-width: 400px;
+    max-width: 500px;
+}
+
+.card, 
+.form-control {
+    border: 0.1px solid black;
 }
 
 .icon {

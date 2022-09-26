@@ -2,7 +2,7 @@
 
 class Forecast {
     constructor(){
-        this.key = 'Q0C1mGddiVJclIPnnR7wIGQogzKrXlUi';
+        this.key = 'LGus7xSWN07NtcDxobtGBPe3Gm5YZBrR';
         this.weatherURI = 'http://dataservice.accuweather.com/currentconditions/v1/';
         this.cityURI = 'http://dataservice.accuweather.com/locations/v1/cities/search';
     }
@@ -15,19 +15,21 @@ class Forecast {
         const query = `?apikey=${this.key}&q=${city}`;
         const response = await fetch(this.cityURI + query);
         const data = await response.json();
+        console.log(data[0]);
         return data[0];
     }
     async getWeather(id){
         const query = `${id}?apikey=${this.key}`;
         const response = await fetch(this.weatherURI + query);
         const data = await response.json();
+        console.log(data[0]);
         return data[0];
     }
 }
 
 
 
-// const key = '9QeoM4g6voBkfMQYz6u2kF3rQrjbKs0d';
+// const key = 'yClJM5uNrK1kfaJmBGAzuQYwHMYmrGeN';
 
 // // Get weather info
 // const getWeather = async (id) => {
